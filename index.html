@@ -83,6 +83,11 @@ img{max-width:100%}
 .callout p{font-size:14.5px;line-height:1.8;color:#4b5563}
 .callout.warn{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.25)}
 .callout.warn .ico{color:#d97706}
+.callout.tip{background:#f8f8f8;border-color:#e8e8e8}
+.callout.tip .ico{color:#292D34}
+.callout .callout-title{font-size:15px;font-weight:600;color:#292D34;margin-bottom:6px}
+.callout p strong{color:#292D34}
+.callout p:last-child{margin-bottom:0}
 .changelog-item{border:1px solid #e8e8e8;border-radius:12px;padding:20px 24px;background:#fafafa;margin-top:16px}
 .changelog-item h4{font-size:17px;font-weight:700;color:#292D34;margin-bottom:10px}
 .changelog-item p{font-size:15px;color:#4b5563}
@@ -201,11 +206,14 @@ img{max-width:100%}
         <p class="img-caption">输入框「+」→「专家」，快速启用常用专家</p>
 
         <hr/>
-        <h3 id="expert-tips">使用专家时的小建议</h3>
-        <ul>
-          <li>说明你的已有材料和希望得到的结果。</li>
-          <li>制作 PPT、报告等交付物时，可以补充受众、用途、篇幅和风格。</li>
-        </ul>
+        <div class="callout tip" id="expert-tips">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+          <div>
+            <p class="callout-title">使用专家时的小建议</p>
+            <p><strong>说清材料与目标：</strong>说明你的已有材料和希望得到的结果。</p>
+            <p><strong>补充交付要求：</strong>制作 PPT、报告等交付物时，可以补充受众、用途、篇幅和风格。</p>
+          </div>
+        </div>
 
         <hr/>
         <h3 id="expert-disclaimer">免责声明</h3>
